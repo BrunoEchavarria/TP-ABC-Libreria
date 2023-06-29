@@ -8,12 +8,12 @@ const libroBuscado = dbLibros.find( libro => libro.id == id)
 
 const contenedor = document.querySelector(".container_info")
 
-contenedor.innerHTML = `<div class="column">
-<h2>${libroBuscado.name}</h2>
+contenedor.innerHTML = `<div class="">
+<h2 class="text-light">${libroBuscado.name}</h2>
 <img style="width: 350px; height: 350px;" src="${libroBuscado.image}" alt="Imagen del libro">
 </div>
-<div class="column">
-<h2>Información</h2>
-<p>${libroBuscado.informacion}</p>
-<a href="./index.html" class="btn btn-primary">Volver al inicio</a>
+<div>
+<h2 class="text-light">Información</h2>
+<p class="text-light">${libroBuscado.informacion}</p>
+<a href="./index.html" class="botton text-light">Volver al inicio</a>
 </div>`
